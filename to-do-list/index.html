@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- styles -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="components/display-component.css">
+    <link rel="stylesheet" href="components/title-component.css">
+    <link rel="stylesheet" href="components/form-component.css">
+    <link rel="stylesheet" href="components/list-component.css">
+    <link rel="stylesheet" href="components/wrapper-component.css">
+    <link rel="stylesheet" href="components/icon-component.css">
+    <link rel="stylesheet" href="components/button-component.css">
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- icons -->
+    <script src="https://kit.fontawesome.com/b2def8b1ca.js" crossorigin="anonymous"></script>
+
+    <title>Tarefas</title>
+</head>
+
+<body>
+    <div class="wrapper-component">
+        <header class="display-component">
+            <h1 class="title-component">Lista de tarefas</h1>
+            <form class="form-component _searchTask">
+                <input class="input" name="searchTask" type="text" placeholder="Buscar tarefa" autofocus>
+            </form>
+        </header>
+        <main>
+            <ul class="list-component">
+                <li class="item" data-task="Assistir Breaking Bad">
+                    <span>Assistir Breaking Bad</span>
+                    <i class="icon-component fa-solid fa-trash-can" data-trash="Assistir Breaking Bad"></i>
+                </li>
+                <li class="item" data-task="Planejar aulas">
+                    <span>Planejar aulas</span>
+                    <i class="icon-component fa-solid fa-trash-can" data-trash="Planejar aulas"></i>
+                </li>
+                <li class="item" data-task="Fazer exercícios físicos">
+                    <span>Fazer exercícios físicos</span>
+                    <i class="icon-component fa-solid fa-trash-can" data-trash="Fazer exercícios físicos"></i>
+                </li>
+            </ul>
+        </main>
+        <footer>
+            <form class="form-component _addTask" action="">
+                <input class="input _addTask" name="addTask" type="text" placeholder="Adicionar tarefa">
+                <button class="button-component" for=""><i class="fa-solid fa-plus "></i></button>
+            </form>
+        </footer>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

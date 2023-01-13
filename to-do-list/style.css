@@ -1,0 +1,21 @@
+body {
+    font-family: 'Comfortaa', cursive;
+    background: #0D0D0D;
+    color: #D9D9D9;
+}
+
+
+
+
+button>i {
+    font-size: 16pt;
+    margin: 0px 10px;
+}
+
+
+
+button:active {
+    border: none;
+    color: #0D0D0D;
+    background-color: mediumspringgreen;
+}

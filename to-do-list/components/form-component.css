@@ -1,0 +1,26 @@
+.form-component {
+    display: flex;
+    flex-direction: column;    
+}
+
+.form-component._addTask {
+    flex-direction: row; 
+}
+
+.form-component .input {
+    border: none;
+    border-radius: 5px;
+    padding: 13px 20px;
+    font-size: 16pt;
+    color: #D9D9D9; 
+    width: 445px;
+    background-color: #595856;   
+}
+
+.form-component .input._addTask { 
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    width: 390px;
+  
+}
+

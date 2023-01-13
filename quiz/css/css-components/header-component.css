@@ -1,0 +1,13 @@
+.header-component{
+    /* display:flex; */
+    background:#0070feff; 
+    padding:35px 0px;
+    border-bottom: 10px solid #69adfffd;
+}
+
+.header-component .text{
+    color:#f9f9f9ff; 
+    font-size: 5em;
+    font-family: 'Libre Baskerville', serif;
+    text-align: center;   
+}

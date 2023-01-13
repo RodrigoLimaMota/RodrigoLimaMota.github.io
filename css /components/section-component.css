@@ -1,0 +1,47 @@
+.section-component {
+    margin-top: 30px;
+    /* background-color: aquamarine; */
+}
+.section-component._projects {
+    margin-bottom: 80px;   
+}
+
+.section-component .mainHeading {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 22pt;
+    font-weight: 700;
+    /* background-color: aqua; */
+    margin-bottom: 10px;
+}
+
+.section-component .subtitle {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 18pt;
+    font-weight: 500;
+}
+
+.section-component .text {
+    display: block;
+    width:100%;
+    max-width: 500px;
+    font-size: 14pt;
+    font-weight: 300;
+    font-family: 'Signika Negative', sans-serif;
+}
+
+.section-component .email {
+    font-size: 14pt;
+    font-family: 'Signika Negative', sans-serif;
+    font-weight: 600;
+    padding-bottom: 30px;
+}
+
+.section-component .heading {
+    font-family: 'Libre Baskerville', serif;
+    color:#8c8c8cff;
+    font-weight: 700;
+    text-align: center;
+    font-size: 14pt;
+    margin-bottom:40px;
+}
+

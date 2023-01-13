@@ -1,0 +1,67 @@
+.button-component {
+    display: flex;  
+    align-items: baseline; 
+    background-color: #0070feff;
+    border-bottom: 6px solid #004cacff;
+    border-radius: 14px;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+.button-component>.curriculum {
+    display: flex;
+    padding:0px;
+    width:160px;
+    color: #f9f9f9ff;
+    font-family: 'Signika Negative', sans-serif;
+}
+
+.button-component img {
+    height: 20px;
+    margin-right:5px
+}
+
+.button-component._passBack {
+    border-radius: 0px;
+    border-right: 6px solid #004cacff;
+    border-top-left-radius: 14px;
+    border-bottom-left-radius: 14px;
+    height: 175px;
+}
+
+.button-component._passBack img {
+    height: 20px;
+}
+
+.button-component._passForward {
+    border-radius: 0px;
+    border-left: 6px solid #004cacff;
+    border-top-right-radius: 14px;
+    border-bottom-right-radius: 14px;
+    height: 175px;
+}
+
+.button-component._passForward img {
+    height: 20px;
+}
+
+.button-component:hover {
+    background-color: #2d8cffff;
+}
+
+.resumeIcon {
+    height: 26px;
+}
+
+/* .text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14pt;
+    font-weight: 500;
+    color: #f9f9f9ff;
+    margin: 8px 0px 0px 5px;
+} */
+
+.button-component:active {
+    border: 3px solid #15ebffff;
+
+}

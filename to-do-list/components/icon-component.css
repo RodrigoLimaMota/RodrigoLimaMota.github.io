@@ -1,0 +1,7 @@
+.icon-component {
+   margin-left: 15px;
+   cursor: pointer;
+}
+.icon-component:hover {
+    color: crimson ;
+}

@@ -1,0 +1,33 @@
+.navigation-component._contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: yellow; */
+    max-width: 500px;
+    width: 100%;
+    font-size: 14pt;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.navigation-component._contact>.link {
+    display: flex;
+    align-items: center;
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 14pt;
+    color: #0070feff;
+    padding: 10px 15px;
+    border: 1px solid #69adfffd;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+.navigation-component._contact>.link:hover {
+    background-color: #e2f1fffd;
+    /* border:3px solid #0070feff; */
+}
+.navigation-component._contact>.link:active {
+    background-color:#f9f9f9ff ;
+    border:3px solid #15ebffff;
+    color: #15ebffff;
+}

@@ -1,0 +1,11 @@
+.icon-component  {
+    text-align: right;
+    border-radius: 100%;
+    margin: 10px 10px;    
+}
+.icon-component:hover{
+  background-color: #dcdcdcff;
+}
+.icon-component img {
+    height:50px;  
+}

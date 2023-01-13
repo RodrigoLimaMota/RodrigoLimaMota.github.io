@@ -1,0 +1,23 @@
+.list-component {
+    list-style-type: none;
+    margin-bottom: 40px;
+    padding: 0;
+}
+
+.list-component .item {
+    display: flex;
+    font-size: 16pt;
+    font-weight: 700;
+    background-color: lightblue;
+    padding: 20px 30px;
+    color: #0D0D0D;
+    border-radius: 2px;
+    width: 420px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1px;
+}
+
+.hidden {
+    display: none;
+}

@@ -1,0 +1,20 @@
+.button-component {
+    font-size: 2em;
+    border-radius: 5px;
+    margin: 40px 0px;
+    padding: 10px 15px;
+    background-color: #0070feff;
+    border-bottom: 5px solid #004cacff;
+    color: #f9f9f9ff;
+}
+
+.button-component:hover {
+    background-color: rgb(25, 125, 255);
+
+}
+
+.button-component:active {
+    background-color: white;
+    border: 3px #15ebffff solid;
+    color: #15ebffff;
+}

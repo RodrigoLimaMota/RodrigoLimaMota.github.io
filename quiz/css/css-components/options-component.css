@@ -1,0 +1,30 @@
+.options-component{
+    display:flex;
+    max-width: 90%;
+    width:300px;    
+    margin:auto;
+    flex-direction: column;
+}
+.option{
+    margin: 8px 0;
+    padding: 10px 15px;
+    background-color: rgb(153, 153, 153);
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    color:white
+}
+
+.option:hover{    
+    background-color: lightgray;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+    color: black;
+}
+
+.option:active {
+    
+    background-color: white;
+    color:white;
+    background: rgb(136, 225, 255);
+    box-shadow: none;
+    
+}

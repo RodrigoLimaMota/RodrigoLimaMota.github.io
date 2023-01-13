@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Signika+Negative:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- styles -->
+    <link rel="stylesheet" href="../css/css-components/button-component.css">
+    <link rel="stylesheet" href="../css/css-components/display-component.css">
+    <link rel="stylesheet" href="../css/css-components/header-component.css">
+    <link rel="stylesheet" href="../css/css-components/main-component.css">
+    <link rel="stylesheet" href="../css/css-components/questions-component.css">
+    <link rel="stylesheet" href="../css/reset.css">
+
+    <title>Quiz interativo</title>
+</head>
+
+<body>
+    <header class="header-component">
+        <h1 class="text">Quiz</h1>
+    </header>
+    <section class="display-component">
+        <h2 class="textDisplay">
+            Avalie sua sabedoria completando este <em>quiz</em> com perguntas de raciocínio lógico.
+        </h2>
+    </section>
+    <main class="main-component">
+
+        <form id="main-form" class="questions-component">
+            <fieldset class="question">
+                <h2>01. João acordou atrasado para o trabalho, e verificou que o tempo restante até o
+                    final do dia era igual à metade do tempo já decorrido do dia. Com base nessas informações,
+                    concluímos que ele acordou às:</h2>
+                <label class="alternative">
+                    <input type="radio" name="inputQuestion0" value="A" data-feedback="correctAnswer">
+                    16 h
+                    <p class="correctionParagraph"> O final do dia é às 24h. Tendo acordado às 16h, a metade do tempo
+                        transcorrido foi 8h. Desta
+                        forma, 16 + 8 = 24.
+                    </p>
+                </label>
+                <label class="alternative">
+                    <input type="radio" name="inputQuestion0" value="B">
+                    12 h
+                </label>
+                <label class="alternative">
+                    <input type="radio" name="inputQuestion0" value="C">
+                    8 h
+                </label>
+                <label class="alternative">
+                    <input type="radio" name="inputQuestion0" value="D">
+                    9 h
+                </label>
+                <label class="alternative">
+                    <input type="radio" name="inputQuestion0" value="E">
+                    14 h
+                </label>
+            </fieldset>
+            <fieldset class="question">
+                <h2> 02. Jogar baralho é uma atividade que estimula o raciocínio. Um jogo tradicional é a Paciência, que
+                    utiliza 52 cartas. Inicialmente são formadas sete colunas com as cartas. A primeira coluna tem uma
+                    carta, a segunda tem duas cartas, a terceira tem três cartas, a quarta tem quatro cartas, e assim
+                    sucessivamente até a sétima coluna, a qual tem sete cartas, e o que sobra forma o monte, que são as
+                    cartas não utilizadas nas colunas.
+                    A quantidade de cartas que forma o monte é:
+                </h2>
+                <label class="alternative">
+                    <input type="radio" name="inputQuestion1" value="A">
+                    21
+                </label>
+                <label class="alternative">
+                    <input type="radio" name="inputQuestion1" value="B" data-feedback="correctAnswer">
+                    24
+                    <p class="correctionParagraph">
+                        Para descobrir o número de cartas que sobraram no monte, devemos diminuir o número total de
+                        cartas do número de cartas que foram utilizadas nas 7 colunas.
+                        O número total de cartas utilizadas nas colunas é encontrado somando-se as cartas de cada uma
+                        delas, deste modo, temos:
+                        1 + 2 + 3 + 4 + 5 + 6 + 7 = 28
+                        Fazendo a subtração, encontramos: 52 - 28 = 24
+                    </p>
+                </label>
+                <label class="alternative">
+                    <input type="radio" name="inputQuestion1" value="C">
+                    26
+                </label>
+                <label class="alternative">
+                    <input type="radio" name="inputQuestion1" value="D">
+                    28
+                </label>
+                <label class="alternative">
+                    <input type="radio" name="inputQuestion1" value="E">
+                    31
+                </label>
+            </fieldset>
+            <fieldset class="question">
+                <h2>
+                    03. Observando a sequência de figuras a seguir, pode se afirmar que a próxima (a sexta figura)
+                    será:<br>
+                    <img src="../assets/exercise03/questionFigures.webp" alt="question 03 Figures">
+                </h2>
+                <label class="alternative">
+                    <input type="radio" name="inputQuestion2" value="A">
+                    <img src="../assets/exercise03/a.webp" alt="option A figure">
+                </label>
+                <label class="alternative">
+                    <input type="radio" name="inputQuestion2" value="B" data-feedback="correctAnswer">
+                    <img src="../assets/exercise03/b.webp" alt="option B figure">
+                    <p class="correctionParagraph">
+                        I. Um triângulo. Três lados.<br>
+                        II. Um paralelogramo. Quatro lados.<br>
+                        III. Um triângulo. Três lados.<br>
+                        IV. Um pentágono. Cinco lados.<br>
+                        V. Um triângulo. Três lados.<br>
+                        Após um triângulo, aparece uma figura com mais um lado: 4 lados, 5 lados, ...
+                        Desta forma, a sexta figura deve possui 6 lados para seguir a sequência, sendo a opção b.
+                    </p>
+                </label>
+                <label class="alternative">
+                    <input type="radio" name="inputQuestion2" value="C">
+                    <img src="../assets/exercise03/c.webp" alt="option C figure">
+                </label>
+                <label class="alternative">
+                    <input type="radio" name="inputQuestion2" value="D">
+                    <img src="../assets/exercise03/d.webp" alt="option D figure">
+                </label>
+            </fieldset>
+            <fieldset class="question">
+                <h2>
+                    04. Duas tartarugas estavam juntas e começaram a caminhar em linha reta em direção a um lago
+                    distante. A primeira tartaruga percorreu 30 metros por dia e demorou 16 dias para chegar ao lago. A
+                    segunda tartaruga só conseguiu percorrer 20 metros por dia e, portanto, chegou ao lago alguns dias
+                    depois da primeira. Quando a primeira tartaruga chegou ao lago, o número de dias que ela teve que
+                    esperar para a segunda tartaruga chegar foi:
+                </h2>
+                <label class="alternative">
+                    <input type="radio" name="inputQuestion3" value="A" data-feedback="correctAnswer">
+                    8
+                    <p class="correctionParagraph">
+                        Como a primeira tartaruga andou 30 metros por dia, em 16 dias terá percorrido:<br>
+                        16 . 30 = 480 metros<br>
+                        Para descobrir quanto tempo a segunda tartaruga levará para percorrer os 480 metros, basta
+                        dividir pelos 20 metros percorridos por dia, assim temos:<br>
+                        480 : 20 = 24 dias<br>
+                        Assim, o tempo de espera da primeira tartaruga será:<br>
+                        24 - 16 = 8
+                    </p>
+                </label>
+                <label class="alternative">
+                    <input type="radio" name="inputQuestion3" value="B">
+                    9
+                </label>
+                <label class="alternative">
+                    <input type="radio" name="inputQuestion3" value="C">
+                    10
+                </label>
+                <label class="alternative">
+                    <input type="radio" name="inputQuestion3" value="D">
+                    12
+                </label>
+                <label class="alternative">
+                    <input type="radio" name="inputQuestion3" value="E">
+                    15
+                </label>
+            </fieldset>
+            <fieldset class="question">
+                <h2>
+                    05. Alguns consideram que a cidade de Florianópolis foi fundada no dia 23 de março de 1726, que
+                    caiu em um sábado. Após 90 dias, no dia 21 de junho, a data assinalou o início do inverno, quando a
+                    noite é a mais longa do ano. Esse dia caiu em uma:
+                </h2>
+                <label class="alternative">
+                    <input type="radio" name="inputQuestion4" value="A">
+                    segunda-feira
+                </label>
+                <label class="alternative">
+                    <input type="radio" name="inputQuestion4" value="B">
+                    terça-feira
+                </label>
+                <label class="alternative">
+                    <input type="radio" name="inputQuestion4" value="C">
+                    quarta-feira
+                </label>
+                <label class="alternative">
+                    <input type="radio" name="inputQuestion4" value="D">
+                    quinta-feira
+                </label>
+                <label class="alternative">
+                    <input type="radio" name="inputQuestion4" value="E" data-feedback="correctAnswer">
+                    sexta-feira
+                    <p class="correctionParagraph">
+                        Como entre um sábado e outro temos o intervalo de 7 dias, vamos dividir os 90 por 7 para saber
+                        quantas semanas teremos nesse intervalo. O resultado dessa divisão é 12 semanas e sobram 6 dias.
+                        Contando seis dias a partir de sábado, temos a sexta feira.
+                    </p>
+                </label>
+            </fieldset>
+            <fieldset class="question">
+                <h2>
+                    06. Quatro suspeitos de praticar um crime fazem as seguintes declarações:
+                    <ul><br>
+                        <li>João: Carlos é o criminoso</li><br>
+                        <li>Pedro: eu não sou criminoso</li><br>
+                        <li>Carlos: Paulo é o criminoso</li><br>
+                        <li>Paulo: Carlos está mentindo</li><br>
+                    </ul><br>
+                    Sabendo que apenas um dos suspeitos mente, determine quem é o criminoso.
+                </h2>
+                <label class="alternative">
+                    <input type="radio" name="inputQuestion5" value="A">
+                    João
+                </label>
+                <label class="alternative">
+                    <input type="radio" name="inputQuestion5" value="B" >
+                    Pedro
+
+                </label>
+                <label class="alternative">
+                    <input type="radio" name="inputQuestion5" value="C" data-feedback="correctAnswer">
+                    Carlos
+                    <p class="correctionParagraph">
+                        Apenas um suspeito mente e os outros dizem a verdade. Assim, há uma contradição entre a
+                        declaração de João e de Carlos.<br>
+                        1ª opção: Se João diz a verdade, a declaração de Pedro pode ser verdadeira, a de Carlos seria
+                        falsa (por ser contraditória) e Paulo estaria falando a verdade.<br>
+                        2ª opção: Se a declaração de João for a falsa e a declaração de Carlos for verdadeira, a
+                        declaração de Pedro pode ser verdadeira, mas a declaração de Paulo teria que ser falsa.<br>
+                        Logo, seriam duas declarações falsas (João e Paulo), invalidando a questão (apenas uma
+                        falsidade).<br>
+                        Assim, a única opção válida é João dizer a verdade e Carlos ser o criminoso.
+                    </p>
+                </label>
+                <label class="alternative">
+                    <input type="radio" name="inputQuestion5" value="D">
+                    Paulo
+                </label>
+            </fieldset>
+            <fieldset class="question">
+                <h2>
+                    07. Sabendo que é verdadeira a afirmação “Todos os alunos de Fulano foram aprovados no concurso”,
+                    então é necessariamente verdade:
+                </h2>
+                <label class="alternative">
+                    <input type="radio" name="inputQuestion6" value="A">
+                    Fulano não foi aprovado no concurso.
+                </label>
+                <label class="alternative">
+                    <input type="radio" name="inputQuestion6" value="B">
+                    Se Roberto não é aluno de Fulano, então ele não foi aprovado no concurso.
+
+                </label>
+                <label class="alternative">
+                    <input type="radio" name="inputQuestion6" value="C">
+                    Fulano foi aprovado no concurso.
+                </label>
+                <label class="alternative">
+                    <input type="radio" name="inputQuestion6" value="D" data-feedback="correctAnswer">
+                    Se Carlos não foi aprovado no concurso, então ele não é aluno de Fulano.
+                    <p class="correctionParagraph">
+                        As letras a e c indicam informações sobre Fulano. Contudo, a informação que temos é sobre os
+                        alunos de Fulano, e, portanto, não podemos afirmar nada a respeito de Fulano.<br>
+                        A letra b fala sobre Roberto. Como ele não é aluno de Fulano, também não podemos afirmar se é
+                        verdade.<br>
+                        A letra d fala que Carlos não foi aprovado. Como todos os alunos de Fulano foram aprovados,
+                        logo, ele não pode ser aluno de Fulano. Assim, essa alternativa é necessariamente
+                        verdadeira.<br>
+                        Por fim, a letra d também não está correta, pois não nos foi informado que só os alunos de
+                        Fulano que foram aprovados.
+                    </p>
+                </label>
+                <label class="alternative">
+                    <input type="radio" name="inputQuestion6" value="E">
+                    Se Elvis foi aprovado no concurso, então ele é aluno de Fulano.
+                </label>
+            </fieldset>
+            <fieldset class="question">
+                <h2>
+                    08. Dona Maria tem quatro filhos: Francisco, Paulo, Raimundo e Sebastião. A esse respeito, sabe-se
+                    que:
+                    <ul><br>
+                        <li>Sebastião é mais velho que Raimundo</li><br>
+                        <li>Francisco é mais novo que Paulo</li><br>
+                        <li>Paulo é mais velho que Raimundo</li><br>
+                    </ul><br>
+                    Assim, é obrigatoriamente verdadeiro que:
+                </h2>
+                <label class="alternative">
+                    <input type="radio" name="inputQuestion7" value="A">
+                    Paulo é o mais velho.
+                </label>
+                <label class="alternative">
+                    <input type="radio" name="inputQuestion7" value="B">
+                    Raimundo é o mais novo.
+                </label>
+                <label class="alternative">
+                    <input type="radio" name="inputQuestion7" value="C">
+                    Francisco é o mais novo.
+                </label>
+                <label class="alternative">
+                    <input type="radio" name="inputQuestion7" value="D" data-feedback="correctAnswer">
+                    Raimundo não é o mais novo.
+                    <p class="correctionParagraph">
+                        Considerando as informações, temos:
+                        Sebastião > Raimundo => Sebastião não é o mais novo e Raimundo não é o mais velho<br>
+                        Francisco < Paulo=> Paulo não é o mais novo e Francisco não é o mais velho<br>
+                            Paulo > Raimundo => Paulo não é o mais novo e Raimundo não é o mais velho<br>
+                            Sabemos que Paulo não é o mais novo, mas não podemos afirmar que é o mais velho. Assim, a
+                            alternativa "a" não é obrigatoriamente verdadeira.<br>
+                            O mesmo podemos dizer das letras b e c, pois sabemos que Raimundo e Francisco não são os
+                            mais velhos, mas não podemos afirmar que são os mais novos.<br>
+                            Portanto, a única opção que é obrigatoriamente verdadeira é que Sebastião não é o mais novo.
+                    </p>
+                </label>
+                <label class="alternative">
+                    <input type="radio" name="inputQuestion7" value="E">
+                    Sebastião não é o mais novo.
+                </label>
+            </fieldset>
+            <fieldset class="question">
+                <h2>
+                    09. Alice, Bruno, Carlos e Denise são as quatro primeiras pessoas de uma fila, não necessariamente
+                    nesta ordem. João olha para os quatro e afirma:
+                    <ul><br>
+                        <li>Bruno e Carlos estão em posições consecutivas na fila.</li><br>
+                        <li>Alice está entre Bruno e Carlos na fila.</li><br>
+                    </ul><br>
+                    Entretanto, as duas afirmações de João são falsas. Sabe-se que Bruno é o terceiro da fila. O segundo
+                    da fila é:
+                </h2>
+                <label class="alternative">
+                    <input type="radio" name="inputQuestion8" value="A">
+                    Alice
+                </label>
+                <label class="alternative">
+                    <input type="radio" name="inputQuestion8" value="B">
+                    Bruno
+                </label>
+                <label class="alternative">
+                    <input type="radio" name="inputQuestion8" value="C">
+                    Carlos
+                </label>
+                <label class="alternative">
+                    <input type="radio" name="inputQuestion8" value="D" data-feedback="correctAnswer">
+                    Denise
+                    <p class="correctionParagraph">
+                        Como Bruno é o terceiro da fila e não está em posição consecutiva de Carlos, logo, Carlos só
+                        pode ser o primeiro da fila. Alice então, só pode ser a última, pois não está entre Bruno e
+                        Carlos.
+                        Com isso, a segunda da fila só pode ser Denise.
+                    </p>
+                </label>
+                <label class="alternative">
+                    <input type="radio" name="inputQuestion8" value="E">
+                    João
+                </label>
+            </fieldset>
+            <fieldset class="question  _last">
+                <h2>
+                    10. Considere a afirmação: “Se hoje é sábado, amanhã não trabalharei.” A negação dessa afirmação é:
+                </h2>
+                <label class="alternative">
+                    <input type="radio" name="inputQuestion9" value="A" data-feedback="correctAnswer">
+                    Hoje é sábado e amanhã trabalharei.
+                    <p class="correctionParagraph">
+                        A questão apresenta uma proposição condicional do tipo "Se..., então", apesar do conectivo
+                        "então" não aparecer explícito na frase.
+                        Neste tipo de proposição, podemos apenas assegurar que quando a frase entre o se e o então for
+                        verdadeira, a frase depois do então também será verdadeira.
+                    </p>
+                </label>
+                <label class="alternative">
+                    <input type="radio" name="inputQuestion9" value="B">
+                    Hoje não é sábado e amanhã trabalharei.
+                </label>
+                <label class="alternative">
+                    <input type="radio" name="inputQuestion9" value="C">
+                    Hoje não é sábado ou amanhã trabalharei.
+                </label>
+                <label class="alternative">
+                    <input type="radio" name="inputQuestion9" value="D">
+                    Se hoje não é sábado, amanhã trabalharei.
+                </label>
+                <label class="alternative">
+                    <input type="radio" name="inputQuestion9" value="E">
+                    Se hoje não é sábado, amanhã não trabalharei.
+                </label>
+            </fieldset>            
+        </form>
+        <button form="main-form" class="button-component">Submit</button>
+    </main>
+    <script src="../js/raciocinio-logico.js"></script>
+</body>
+
+</html>

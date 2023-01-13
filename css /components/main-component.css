@@ -1,0 +1,12 @@
+.main-component {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 60px;
+    /* background-color: antiquewhite; */
+}
+
+.main-component .leftColumn {
+    margin-bottom: 80px;
+    /* background-color: antiquewhite; */
+}

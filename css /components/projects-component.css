@@ -1,0 +1,66 @@
+.projects-component  {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* background-color: blue; */
+}
+.projects-component .project {
+    font-family: 'Signika Negative', sans-serif;
+    color: #1a2e40ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12pt;
+    height:50px;
+    width:150px;
+    /* background-color: #dcdcdcff; */
+    border-radius: 3px;
+    border:solid #1a2e40ff 1px;   
+    margin: 5px;
+    cursor: pointer;
+}
+
+.projects-component .project:hover {
+    box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.2);
+    background-color: rgb(243, 243, 243);;
+    height:51px;
+    width:151px; 
+}
+.projects-component .project:active{
+    color:#15ebffff ; 
+    border:solid #15ebffff 2px;
+    background-color: #f9f9f9ff;
+    height:50px;
+    width:150px;
+    box-shadow: none;
+}
+.projects-component .soon{   
+    color: #8c8c8cff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12pt;
+    height:50px;
+    width:150px;
+    /* background-color: #dcdcdcff; */
+    border-radius: 5px;
+    border:solid #8c8c8cff 1px;   
+    margin: 5px;
+    cursor: pointer;
+}
+.projects-component .soon:hover{
+    height:50px;
+    width:150px;
+    box-shadow: none;
+    background-color: #f9f9f9ff;
+    cursor: auto;
+}
+.projects-component .soon:active{
+    color: #8c8c8cff;
+    border:solid #8c8c8cff 1px;
+    background-color: #f9f9f9ff;
+    height:50px;
+    width:150px;
+
+}
+

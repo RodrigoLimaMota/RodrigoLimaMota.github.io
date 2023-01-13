@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Signika+Negative:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- styles -->
+ <link rel="stylesheet" href="../css/css-components/button-component.css">
+ <link rel="stylesheet" href="../css/css-components/display-component.css">
+ <link rel="stylesheet" href="../css/css-components/header-component.css">
+ <link rel="stylesheet" href="../css/css-components/main-component.css">
+ <link rel="stylesheet" href="../css/css-components/questions-component.css">
+ <link rel="stylesheet" href="../css/reset.css">
+
+    <title>Quiz interativo</title>
+</head>
+
+<body>
+    <header class="header-component">
+        <h1 class="text">Quiz</h1>
+    </header>
+    <section class="display-component">
+        <h2 class="textDisplay">
+            Avalie sua sabedoria completando este <em>quiz</em> com perguntas de conhecimentos gerais.
+        </h2>
+    </section>
+    <main class="main-component">
+
+        <form id="main-form" action="#" class="questions-component">
+            <fieldset class="question">
+                <h2>01. Normalmente, quantos litros de sangue uma pessoa tem? Em média, quantos são retirados numa
+                    doação de sangue?
+                </h2>
+                <label class="alternative">
+                    <input type="radio" name="inputQuestion0" value="A">
+                    Tem entre 2 a 4 litros. São retirados 450 mililitros
+                </label>
+                <label class="alternative">
+                    <input type="radio" name="inputQuestion0" value="B" data-feedback="correctAnswer">
+                    Tem entre 4 a 6 litros. São retirados 450 mililitros
+                    <p class="correctionParagraph">A quantidade de sangue varia de pessoa para pessoa. O volume de
+                        sangue é entre 7% e 8% o peso corporal. Assim, um adulto com 50 e 80 quilos, pode ter entre 4 e
+                        6 litros de sangue, respectivamente.
+                        Portanto, 4 a 6 litros é a alternativa que compreende a quantidade mais próxima de adultos com
+                        pesos diferentes.
+                    </p>
+                </label>
+                <label class="alternative">
+                    <input type="radio" name="inputQuestion0" value="C">
+                    Tem 10 litros. São retirados 2 litros
+                </label>
+                <label class="alternative">
+                    <input type="radio" name="inputQuestion0" value="D">
+                    Tem 7 litros. São retirados 1,5 litros
+                </label>
+                <label class="alternative">
+                    <input type="radio" name="inputQuestion0" value="E">
+                    Tem 0,5 litros. São retirados 0,5 litros
+                </label>
+            </fieldset>
+            <fieldset class="question">
+                <h2>02. De quem é a famosa frase “Penso, logo existo”?
+                </h2>
+                <label class="alternative">
+                    <input type="radio" name="inputQuestion1" value="A">
+                    Platão
+                </label>
+                <label class="alternative">
+                    <input type="radio" name="inputQuestion1" value="B">
+                    Galileu Galilei
+                </label>
+                <label class="alternative">
+                    <input type="radio" name="inputQuestion1" value="C" data-feedback="correctAnswer">
+                    Descartes
+                    <p class="correctionParagraph">
+                        “Je pense, donc je suis” é a frase original, escrita em francês, do filósofo René Descartes
+                        (1596-1650). Ela resume o pensamento e o método de Descartes, para quem tudo tem início na
+                        dúvida.
+                    </p>
+                </label>
+                <label class="alternative">
+                    <input type="radio" name="inputQuestion1" value="D">
+                    Sócrates
+                </label>
+                <label class="alternative">
+                    <input type="radio" name="inputQuestion1" value="E">
+                    Francis Bacon
+                </label>
+            </fieldset>
+            <fieldset class="question">
+                <h2>
+                    03. De onde é a invenção do chuveiro elétrico?
+                </h2>
+                <label class="alternative">
+                    <input type="radio" name="inputQuestion2" value="A">
+                    França
+                </label>
+                <label class="alternative">
+                    <input type="radio" name="inputQuestion2" value="B">
+                    Inglaterra
+                </label>
+                <label class="alternative">
+                    <input type="radio" name="inputQuestion2" value="C" data-feedback="correctAnswer">
+                    Brasil
+                    <p class="correctionParagraph">
+                        Francisco Canhos é o nome do homem que, na década de 40, desenvolveu o primeiro chuveiro
+                        elétrico seguro em Jaú-SP. O aparelho vinha sendo desenvolvido desde os anos 30, mas apresentava
+                        riscos de curto-circuito.
+                    </p>
+                </label>
+                <label class="alternative">
+                    <input type="radio" name="inputQuestion2" value="D">
+                    Austrália
+                </label>
+                <label class="alternative">
+                    <input type="radio" name="inputQuestion2" value="E">
+                    Itália
+                </label>
+            </fieldset>
+            <fieldset class="question">
+                <h2>
+                    04. Quais o menor e o maior país do mundo?
+                </h2>
+                <label class="alternative">
+                    <input type="radio" name="inputQuestion3" value="A" data-feedback="correctAnswer">
+                    Vaticano e Rússia
+                    <p class="correctionParagraph">
+                        O Vaticano, sede da igreja católica, tem apenas 44 hectares (0,44 km2). A Rússia, localizada em
+                        dois continentes (Ásia e Europa), tem 17 milhões de km2.
+                    </p>
+                </label>
+                <label class="alternative">
+                    <input type="radio" name="inputQuestion3" value="B">
+                    Nauru e China
+                </label>
+                <label class="alternative">
+                    <input type="radio" name="inputQuestion3" value="C">
+                    Mônaco e Canadá
+                </label>
+                <label class="alternative">
+                    <input type="radio" name="inputQuestion3" value="D">
+                    Malta e Estados Unidos
+                </label>
+                <label class="alternative">
+                    <input type="radio" name="inputQuestion3" value="E">
+                    São Marino e Índia
+                </label>
+            </fieldset>
+            <fieldset class="question">
+                <h2>
+                    05. Qual o nome do presidente do Brasil que ficou conhecido como Jango?
+                </h2>
+                <label class="alternative">
+                    <input type="radio" name="inputQuestion4" value="A">
+                    Jânio Quadros
+                </label>
+                <label class="alternative">
+                    <input type="radio" name="inputQuestion4" value="B">
+                    Jacinto Anjos
+                </label>
+                <label class="alternative">
+                    <input type="radio" name="inputQuestion4" value="C">
+                    Getúlio Vargas
+                </label>
+                <label class="alternative">
+                    <input type="radio" name="inputQuestion4" value="D">
+                    João Figueiredo
+                </label>
+                <label class="alternative">
+                    <input type="radio" name="inputQuestion4" value="E" data-feedback="correctAnswer">
+                    João Goulart
+                    <p class="correctionParagraph">
+                        João Belchior Marques Goulart (1919-1976) foi o 24º presidente do Brasil, cujo período de
+                        governo compreende os anos de 1961 a 1964.
+                    </p>
+                </label>
+            </fieldset>
+            <fieldset class="question">
+                <h2>
+                    06. Qual o grupo em que todas as palavras foram escritas corretamente?
+                </h2>
+                <label class="alternative">
+                    <input type="radio" name="inputQuestion5" value="A">
+                    Asterístico, beneficiente, meteorologia, entertido
+                </label>
+                <label class="alternative">
+                    <input type="radio" name="inputQuestion5" value="B" data-feedback="correctAnswer">
+                    Asterisco, beneficente, meteorologia, entretido
+                    <p class="correctionParagraph">
+                        Estas palavras são exemplos de barbarismo, um vício de linguagem em que as palavras são
+                        pronunciadas ou escritas incorretamente.
+                    </p>
+                </label>
+                <label class="alternative">
+                    <input type="radio" name="inputQuestion5" value="C">
+                    Asterisco, beneficente, metereologia, entretido
+                </label>
+                <label class="alternative">
+                    <input type="radio" name="inputQuestion5" value="D">
+                    Asterístico, beneficiente, metereologia, entretido
+                </label>
+                <label class="alternative">
+                    <input type="radio" name="inputQuestion5" value="E">
+                    Asterisco, beneficiente, metereologia, entretido
+                </label>
+            </fieldset>
+            <fieldset class="question">
+                <h2>
+                    07. Qual o livro mais vendido no mundo a seguir à Bíblia?
+                </h2>
+                <label class="alternative">
+                    <input type="radio" name="inputQuestion6" value="A">
+                    O Senhor dos Anéis
+                </label>
+                <label class="alternative">
+                    <input type="radio" name="inputQuestion6" value="B" data-feedback="correctAnswer">
+                    Dom Quixote
+                    <p class="correctionParagraph">
+                        Dom Quixote, de Miguel de Cervantes, é um clássico da literatura espanhola. A obra foi escrita
+                        em duas partes, uma em 1605, e a outra em 1615.
+                    </p>
+                </label>
+                <label class="alternative">
+                    <input type="radio" name="inputQuestion6" value="C">
+                    O Pequeno Príncipe
+                </label>
+                <label class="alternative">
+                    <input type="radio" name="inputQuestion6" value="D">
+                    Ela, a Feiticeira
+                </label>
+                <label class="alternative">
+                    <input type="radio" name="inputQuestion6" value="E">
+                    Um Conto de Duas Cidades
+                </label>
+            </fieldset>
+            <fieldset class="question">
+                <h2>
+                    08. Quantas casas decimais tem o número pi?
+                </h2>
+                <label class="alternative">
+                    <input type="radio" name="inputQuestion7" value="A">
+                    Duas
+                </label>
+                <label class="alternative">
+                    <input type="radio" name="inputQuestion7" value="B">
+                    Centenas
+                </label>
+                <label class="alternative">
+                    <input type="radio" name="inputQuestion7" value="C" data-feedback="correctAnswer">
+                    Infinitas
+                    <p class="correctionParagraph">
+                        Ao longo dos tempos, vários estudiosos têm se dedicado a calcular o número pi e já chegaram ao
+                        número de 5 bilhões de casas.
+                    </p>
+                </label>
+                <label class="alternative">
+                    <input type="radio" name="inputQuestion7" value="D">
+                    Vinte
+                </label>
+                <label class="alternative">
+                    <input type="radio" name="inputQuestion7" value="E">
+                    Milhares
+                </label>
+            </fieldset>
+            <fieldset class="question">
+                <h2>
+                    09. Atualmente, quantos elementos químicos a tabela periódica possui?
+                </h2>
+                <label class="alternative">
+                    <input type="radio" name="inputQuestion8" value="A">
+                    113
+                </label>
+                <label class="alternative">
+                    <input type="radio" name="inputQuestion8" value="B">
+                    109
+                </label>
+                <label class="alternative">
+                    <input type="radio" name="inputQuestion8" value="C">
+                    108
+                </label>
+                <label class="alternative">
+                    <input type="radio" name="inputQuestion8" value="D" data-feedback="correctAnswer">
+                    118
+                    <p class="correctionParagraph">
+                        Os últimos elementos foram adicionados à tabela periódica em 2016. Eles são: 113 (Nihônio), 115
+                        (Moscóvio), 117 (Tenessino) e 118 (Oganessônio).
+                    </p>
+                </label>
+                <label class="alternative">
+                    <input type="radio" name="inputQuestion8" value="E">
+                    92
+                </label>
+            </fieldset>
+            <fieldset class="question">
+                <h2>
+                    10. Quais os países que têm a maior e a menor expectativa de vida do mundo?
+                </h2>
+                <label class="alternative">
+                    <input type="radio" name="inputQuestion9" value="A" data-feedback="correctAnswer">
+                    Japão e Serra Leoa
+                    <p class="correctionParagraph">
+                        No Japão, a expectativa de vida é em média 84 anos, enquanto na Serra Leoa é 53 anos.
+                    </p>
+                </label>
+                <label class="alternative">
+                    <input type="radio" name="inputQuestion9" value="B">
+                    Austrália e Afeganistão
+                </label>
+                <label class="alternative">
+                    <input type="radio" name="inputQuestion9" value="C">
+                    Itália e Chade
+                </label>
+                <label class="alternative">
+                    <input type="radio" name="inputQuestion9" value="D">
+                    Brasil e Congo
+                </label>
+                <label class="alternative">
+                    <input type="radio" name="inputQuestion9" value="E">
+                    Estados Unidos e Angola
+                </label>
+            </fieldset>
+            <fieldset class="question">
+                <h2>
+                    11. Qual o número mínimo de jogadores numa partida de futebol?
+                </h2>
+                <label class="alternative">
+                    <input type="radio" name="inputQuestion10" value="A">
+                    8
+                </label>
+                <label class="alternative">
+                    <input type="radio" name="inputQuestion10" value="B">
+                    10
+                </label>
+                <label class="alternative">
+                    <input type="radio" name="inputQuestion10" value="C">
+                    9
+                </label>
+                <label class="alternative">
+                    <input type="radio" name="inputQuestion10" value="D">
+                    5
+                </label>
+                <label class="alternative">
+                    <input type="radio" name="inputQuestion10" value="E" data-feedback="correctAnswer">
+                    7
+                    <p class="correctionParagraph">
+                        Uma partida de futebol conta com o número máximo de 11 jogadores e mínimo de 7, contando com o
+                        goleiro.
+                    </p>
+                </label>
+            </fieldset>
+            <fieldset class="question">
+                <h2>
+                    12. Quais os principais autores do Barroco no Brasil?
+                </h2>
+                <label class="alternative">
+                    <input type="radio" name="inputQuestion11" value="A" data-feedback="correctAnswer">
+                    Gregório de Matos, Bento Teixeira e Manuel Botelho de Oliveira
+                    <p class="correctionParagraph">
+                        Gregório de Mato (1633-1696), conhecido como Boca do Inferno, é o maior representante do Barroco
+                        no Brasil. Tinha esse apelido devido às críticas sociais contidas na sua poesia.
+                        Bento Teixeira (1561-1618) é o autor do poema Prosopopeia, publicado em 1601, que é considerado
+                        o marco inicial do Barroco brasileiro.
+                        Manuel Botelho de Oliveira (1636-1711), um dos grandes representantes do Barroco, é autor do
+                        livro Música do Parnaso, publicado em Lisboa quando o autor tinha quase 70 anos. Trata-se da sua
+                        obra com maior destaque.
+                    </p>
+                </label>
+                <label class="alternative">
+                    <input type="radio" name="inputQuestion11" value="B">
+                    Miguel de Cervantes, Gregório de Matos e Danthe Alighieri
+                </label>
+                <label class="alternative">
+                    <input type="radio" name="inputQuestion11" value="C">
+                    Padre Antônio Vieira, Padre Manuel de Melo e Gregório de Matos
+                </label>
+                <label class="alternative">
+                    <input type="radio" name="inputQuestion11" value="D">
+                    Castro Alves, Bento Teixeira e Manuel Botelho de Oliveira
+                </label>
+                <label class="alternative">
+                    <input type="radio" name="inputQuestion11" value="E">
+                    Álvares de Azevedo, Gregório de Matos e Bento Teixeira
+                </label>
+            </fieldset>
+            <fieldset class="question">
+                <h2>
+                    13. Quais as duas datas que são comemoradas em novembro?
+                </h2>
+                <label class="alternative">
+                    <input type="radio" name="inputQuestion12" value="A">
+                    Independência do Brasil e Dia da Bandeira
+                </label>
+                <label class="alternative">
+                    <input type="radio" name="inputQuestion12" value="B" data-feedback="correctAnswer">
+                    Proclamação da República e Dia Nacional da Consciência Negra
+                    <p class="correctionParagraph">
+                        A Proclamação da República é comemorada no dia 15 de novembro, data em que Marechal Deodoro da
+                        Fonseca proclamou a república em 1889.
+                        O Dia Nacional da Consciência Negra é comemorado no dia 20 de novembro, data em que Zumbi dos
+                        Palmares morreu, em 1695.
+                    </p>
+                </label>
+                <label class="alternative">
+                    <input type="radio" name="inputQuestion12" value="C">
+                    Dia do Médico e Dia de São Lucas
+                </label>
+                <label class="alternative">
+                    <input type="radio" name="inputQuestion12" value="D">
+                    Dia de Finados e Dia Nacional do Livro
+                </label>
+                <label class="alternative">
+                    <input type="radio" name="inputQuestion12" value="E">
+                    Black Friday e Dia da Árvore
+                </label>
+            </fieldset>
+            <fieldset class="question">
+                <h2>
+                    14. Quem pintou "Guernica"?
+                </h2>
+                <label class="alternative">
+                    <input type="radio" name="inputQuestion13" value="A">
+                    Paul Cézanne
+                </label>
+                <label class="alternative">
+                    <input type="radio" name="inputQuestion13" value="B" data-feedback="correctAnswer">
+                    Pablo Picasso
+                    <p class="correctionParagraph">
+                        Pablo Picasso (1881-1973) pintou Guernica, uma das suas obras de maior destaque, em 1937. A
+                        pintura feita em óleo sobre tela retrata o bombardeio à cidade espanhola Guernica em 26 de abril
+                        de 1937, aquando da Guerra Civil Espanhola.
+                    </p>
+                </label>
+                <label class="alternative">
+                    <input type="radio" name="inputQuestion13" value="C">
+                    Diego Rivera
+                </label>
+                <label class="alternative">
+                    <input type="radio" name="inputQuestion13" value="D">
+                    Tarsila do Amaral
+                </label>
+                <label class="alternative">
+                    <input type="radio" name="inputQuestion13" value="E">
+                    Salvador Dalí
+                </label>
+            </fieldset>
+            <fieldset class="question">
+                <h2>
+                    15. Quanto tempo a luz do Sol demora para chegar à Terra?
+                </h2>
+                <label class="alternative">
+                    <input type="radio" name="inputQuestion14" value="A">
+                    12 minutos
+                </label>
+                <label class="alternative">
+                    <input type="radio" name="inputQuestion14" value="B">
+                    1 dia
+                </label>
+                <label class="alternative">
+                    <input type="radio" name="inputQuestion14" value="C">
+                    12 horas
+                </label>
+                <label class="alternative">
+                    <input type="radio" name="inputQuestion14" value="D" data-feedback="correctAnswer">
+                    8 minutos
+                    <p class="correctionParagraph">
+                        Essa é uma questão que se fundamenta na ótica. Ela é calculada com base na distância do Sol em
+                        relação à Terra, que é de aproximadamente 150 000 000 km, considerando que a velocidade da luz
+                        no vácuo é 300 000 Km/s.
+                        150 000 000 dividido por 300 000 é igual a 500 segundos, ou seja, 8,33 minutos.
+                    </p>
+                </label>
+                <label class="alternative">
+                    <input type="radio" name="inputQuestion14" value="E">
+                    12 segundos
+                </label>
+            </fieldset>
+            <fieldset class="question">
+                <h2>
+                    16. Qual das alternativas abaixo apenas contêm classes de palavras?
+                </h2>
+                <label class="alternative">
+                    <input type="radio" name="inputQuestion15" value="A">
+                    Vogais, semivogais e consoantes
+                </label>
+                <label class="alternative">
+                    <input type="radio" name="inputQuestion15" value="B">
+                    Artigo, verbo transitivo e verbo intransitivo
+                </label>
+                <label class="alternative">
+                    <input type="radio" name="inputQuestion15" value="C">
+                    Fonologia, Morfologia e Sintaxe
+                </label>
+                <label class="alternative">
+                    <input type="radio" name="inputQuestion15" value="D">
+                    Hiatos, ditongos e tritongos
+                </label>
+                <label class="alternative">
+                    <input type="radio" name="inputQuestion15" value="E" data-feedback="correctAnswer">
+                    Substantivo, verbo e preposição
+                    <p class="correctionParagraph">
+                        Classes de palavras são palavras que se organizam de acordo com as suas funções na língua
+                        portuguesa. Existem 10 classes de palavras: substantivo, verbo, preposição, adjetivo, pronome,
+                        artigo, numeral, conjunção, interjeição e advérbio.
+                    </p>
+                </label>
+            </fieldset>
+            <fieldset class="question">
+                <h2>
+                    17. Qual a nacionalidade de Che Guevara?
+                </h2>
+                <label class="alternative">
+                    <input type="radio" name="inputQuestion16" value="A">
+                    Cubana
+                </label>
+                <label class="alternative">
+                    <input type="radio" name="inputQuestion16" value="B">
+                    Peruana
+                </label>
+                <label class="alternative">
+                    <input type="radio" name="inputQuestion16" value="C">
+                    Boliviana
+                </label>
+                <label class="alternative">
+                    <input type="radio" name="inputQuestion16" value="D" data-feedback="correctAnswer">
+                    Argentina
+                    <p class="correctionParagraph">
+                        Conhecido como um dos líderes da Revolução Cubana, ao lado dos irmãos Fidel e Raúl Castro,
+                        Ernesto Guevara de La Serna nasceu em Rosário, Argentina, no dia 14 de junho de 1928.
+                    </p>
+                </label>
+                <label class="alternative">
+                    <input type="radio" name="inputQuestion16" value="E">
+                    Estados Unidos e Angola
+                </label>
+            </fieldset>
+            <fieldset class="question">
+                <h2>
+                    18. Qual a altura da rede de vôlei nos jogos masculino e feminino?
+                </h2>
+                <label class="alternative">
+                    <input type="radio" name="inputQuestion17" value="A">
+                    2,4 para ambos
+                </label>
+                <label class="alternative">
+                    <input type="radio" name="inputQuestion17" value="B">
+                    2,5 m e 2,0 m
+                </label>
+                <label class="alternative">
+                    <input type="radio" name="inputQuestion17" value="C">
+                    1,8 m e 1,5 m
+                </label>
+                <label class="alternative">
+                    <input type="radio" name="inputQuestion17" value="D">
+                    2,45 m e 2,15 m
+                </label>
+                <label class="alternative">
+                    <input type="radio" name="inputQuestion17" value="E" data-feedback="correctAnswer">
+                    2,43 m e 2,24 m
+                    <p class="correctionParagraph">
+                        Antigamente, a altura era de 1,98 m. Atualmente é 2,43 m para jogadores adultos masculinos e
+                        2,24 m para jogadores adultos femininos. A altura da rede também varia de acordo com a idade dos
+                        jogadores.
+                    </p>
+                </label>
+            </fieldset>
+            <fieldset class="question">
+                <h2>
+                    19. Em que ordem surgiram os modelos atômicos?
+                </h2>
+                <label class="alternative">
+                    <input type="radio" name="inputQuestion18" value="A">
+                    Thomson, Dalton, Rutherford, Rutherford-Bohr
+                </label>
+                <label class="alternative">
+                    <input type="radio" name="inputQuestion18" value="B">
+                    Rutherford-Bohr, Rutherford, Thomson, Dalton
+                </label>
+                <label class="alternative">
+                    <input type="radio" name="inputQuestion18" value="C">
+                    Dalton, Rutherford-Bohr, Thomson, Rutherford
+                </label>
+                <label class="alternative">
+                    <input type="radio" name="inputQuestion18" value="D">
+                    Dalton, Thomson, Rutherford-Bohr, Rutherford
+                </label>
+                <label class="alternative">
+                    <input type="radio" name="inputQuestion18" value="E" data-feedback="correctAnswer">
+                    Dalton, Thomson, Rutherford, Rutherford-Bohr
+                    <p class="correctionParagraph">
+                        Ao logo dos tempos, os modelos atômicos evoluíram. O Modelo atômico de Dalton foi proposto em
+                        1803. Em 1898 foi a vez de Thomson apresentar o seu modelo. Em 1911, Rutherford mostrou a sua
+                        proposta. Pouco depois, baseado no modelo de Rutherford, o cientista Niels Bohr aprimorou um
+                        modelo que apresentou em 1913, o Modelo atômico de Rutherford-Bohr.
+                    </p>
+                </label>
+            </fieldset>
+            <fieldset class="question _last">
+                <h2>
+                    20. Em que período da pré-história o fogo foi descoberto?
+                </h2>
+                <label class="alternative">
+                    <input type="radio" name="inputQuestion19" value="A">
+                    Neolítico
+                </label>
+                <label class="alternative">
+                    <input type="radio" name="inputQuestion19" value="B" data-feedback="correctAnswer">
+                    Paleolítico
+                    <p class="correctionParagraph">
+                        Foi no Paleolítico que o fogo começou a ser utilizado, quando os homens aprenderam que era
+                        possível obter fogo por meio do atrito de pedaços de madeira e pedra.
+                    </p>
+                </label>
+                <label class="alternative">
+                    <input type="radio" name="inputQuestion19" value="C">
+                    Idade dos Metais
+                </label>
+                <label class="alternative">
+                    <input type="radio" name="inputQuestion19" value="D">
+                    Período da Pedra Polida
+                </label>
+                <label class="alternative">
+                    <input type="radio" name="inputQuestion19" value="E">
+                    Idade Média
+                </label>
+            </fieldset>
+        </form>
+        <button form="main-form" class="button-component">Submit</button>
+    </main>
+    <script src="../js/conhecimentos-gerais.js"></script>
+</body>
+</html>
